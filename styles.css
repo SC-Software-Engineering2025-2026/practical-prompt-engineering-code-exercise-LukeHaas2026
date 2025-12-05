@@ -151,6 +151,72 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+.rating-section {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+  color: #d1d5db;
+  transition: color 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star:hover,
+.star.hover {
+  color: #fbbf24;
+  transform: scale(1.15);
+}
+
+.star.filled {
+  color: #fbbf24;
+}
+
+.star.empty {
+  color: #d1d5db;
+}
+
+.rating-text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.average-rating {
+  font-weight: 700;
+  color: #111827;
+}
+
+.rating-count {
+  color: var(--muted);
+}
+
+.no-ratings {
+  color: var(--muted);
+  font-style: italic;
+}
+
 .delete-btn {
   background: transparent;
   border: 1px solid transparent;
